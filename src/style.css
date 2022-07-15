@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'TitleFont';
+    src: url('./AlfaSlabOne-Regular.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NavBarFont';
+    src: url('./Kanit-Bold.ttf') format('truetype');
+    font-style: normal;
+}
+
+html,body{
+    margin: 0;
+    padding: 0;
+}
+
+#navbar{
+    background-color: #042F4B;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+.title{
+    color: #ED1250;
+    font-family: 'TitleFont';
+    font-size: 50px;
+}
+
+.buttons{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    font-family: 'NavBarFont';
+}
+
+.button:hover{
+    cursor: pointer;
+}
+
