@@ -72,6 +72,7 @@ body{
     justify-content: center;
     align-items: center;
     gap: 15px;
+    padding: 100px; 
 }
 
 .restaurantName{
@@ -92,15 +93,17 @@ body{
 
 .menu{
     background-color: #F9C5B0;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));;
-
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    border-radius: 50px;
+    justify-content:space-around;
 }
 
-.itemInfo{
+.basicInfo{
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: baseline;
     justify-content: space-between;
 }
 
@@ -121,10 +124,26 @@ body{
     font-size: 25px;
 }
 
-.menuItem{
+.itemInfo{
     display: flex;
     flex-direction: column;
+    gap: 20px;
+}
+
+.menuItem{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     gap:20px;
     padding: 20px;
+    flex-basis: 40rem;
 }
+
+.menuItem img{
+    width: calc(5rem + 8vw);
+    height: calc(5rem + 8vw);
+}
+
+
+
 
