@@ -1,19 +1,19 @@
 @font-face {
     font-family: 'TitleFont';
-    src: url('./AlfaSlabOne-Regular.ttf') format('truetype');
+    src: url('./fonts/AlfaSlabOne-Regular.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'NavBarFont';
-    src: url('./Kanit-Bold.ttf') format('truetype');
+    src: url('./fonts/Kanit-Bold.ttf') format('truetype');
     font-style: normal;
 }
 
 @font-face {
     font-family: 'HomeFont';
-    src: url('./EduNSWACTFoundation-VariableFont_wght.ttf') format('truetype');
+    src: url('./fonts/EduNSWACTFoundation-VariableFont_wght.ttf') format('truetype');
     font-style: normal;
 }
 
@@ -64,7 +64,7 @@ body{
     color: #ED1250;
 }
 
-.container{
+#content{
     background-color: rgba(0, 0, 0, 0.4);
     background-image: url('./welcomePage.jpeg');
     background-repeat: no-repeat;
@@ -78,7 +78,7 @@ body{
     gap: 15px;
 }
 
-.container p{
+#content p{
     color: white;
     font-size: 80px;
 }
