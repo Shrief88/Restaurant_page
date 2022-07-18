@@ -11,9 +11,30 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'HomeFont';
+    src: url('./EduNSWACTFoundation-VariableFont_wght.ttf') format('truetype');
+    font-style: normal;
+}
+
+
+
+
+
+p{
+    margin: 0;
+    padding: 0; 
+}
+
 html,body{
     margin: 0;
     padding: 0;
+    min-height: 100vh;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
 }
 
 #navbar{
@@ -40,5 +61,34 @@ html,body{
 
 .button:hover{
     cursor: pointer;
+    color: #ED1250;
 }
+
+.container{
+    background-color: rgba(0, 0, 0, 0.4);
+    background-image: url('./welcomePage.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    flex: 1;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.container p{
+    color: white;
+    font-size: 80px;
+}
+
+.welcomeText{
+    font-family: 'HomeFont';
+    font-weight: 800;
+}
+
+
+
+
 
