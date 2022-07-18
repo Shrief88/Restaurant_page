@@ -43,6 +43,11 @@ function createMeal(name,price,description,image,menu){
 
     basicInfo.appendChild(itemName);
     basicInfo.appendChild(itemPrice);
+
+    basicInfo.setAttribute('style',"padding-bottom:10px");
+    basicInfo.setAttribute('style','border-bottom :dashed red');
+    basicInfo.style['padding-bottom'] = "10px";
+
     itemInfo.appendChild(basicInfo);
 
     const itemDescription = document.createElement('p');

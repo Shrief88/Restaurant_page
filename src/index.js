@@ -2,6 +2,7 @@ import './style.css';
 import createNavbar from './modules/navbar';
 import homePage from './modules/home';
 import menuPage from './modules/menu';
+import contactPage from './modules/contact';
 
 
 
@@ -9,7 +10,7 @@ init();
 
 function init(){
     createNavbar();
-    menuPage();
+    contactPage();
 }
 
 function clearPageContent(){
@@ -31,6 +32,13 @@ const displayController = (()=>{
         clearPageContent();
         menuPage();
     })
+
+    contactPage.addEventListener('click',()=>{
+        clearPageContent();
+        contactPage();
+    })
+
+
 })()
 
 
