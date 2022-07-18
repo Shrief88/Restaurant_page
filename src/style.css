@@ -17,10 +17,6 @@
     font-style: normal;
 }
 
-
-
-
-
 p{
     margin: 0;
     padding: 0; 
@@ -65,7 +61,7 @@ body{
 }
 
 #content{
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.5);
     background-image: url('./welcomePage.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -78,17 +74,57 @@ body{
     gap: 15px;
 }
 
-#content p{
+.restaurantName{
     color: white;
-    font-size: 80px;
+    font-size: 80px; 
+    font-family: 'TitleFont';
+
 }
 
 .welcomeText{
     font-family: 'HomeFont';
     font-weight: 800;
+    color: white;
+    font-size: 80px;
 }
 
+/***************************************menu page***********************************/
 
+.menu{
+    background-color: #F9C5B0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));;
 
+}
 
+.itemInfo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.itemName{
+    font-size: 20px;
+    font-family: 'HomeFont';
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.itemPrice{
+    font-size: 25px;
+    color: #ED1250;
+    font-weight: bold;
+}
+
+.itemDescription{
+    font-size: 25px;
+}
+
+.menuItem{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    padding: 20px;
+}
 

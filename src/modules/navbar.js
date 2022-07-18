@@ -9,20 +9,23 @@ function createNavbar (){
     const buttons = document.createElement('div');
     buttons.classList.add('buttons');
     
-    const Homebutton = document.createElement('div');
-    Homebutton.classList.add('button');
-    Homebutton.innerHTML= "Home";
-    buttons.appendChild(Homebutton);
+    const homeButton = document.createElement('div');
+    homeButton.classList.add('button');
+    homeButton.setAttribute("id","homeButton");
+    homeButton.innerHTML= "Home";
+    buttons.appendChild(homeButton);
     
-    const Menubutton = document.createElement('div');
-    Menubutton.classList.add('button');
-    Menubutton.innerHTML= "Menu";
-    buttons.appendChild(Menubutton);
+    const menuButton = document.createElement('div');
+    menuButton.classList.add('button');
+    menuButton.setAttribute("id","menuButton");
+    menuButton.innerHTML= "Menu";
+    buttons.appendChild(menuButton);
     
-    const Contactbutton = document.createElement('div');
-    Contactbutton.classList.add('button');
-    Contactbutton.innerHTML= "Contact";
-    buttons.appendChild(Contactbutton);
+    const contactButton = document.createElement('div');
+    contactButton.classList.add('button');
+    contactButton.setAttribute("id","contactButton");
+    contactButton.innerHTML= "Contact";
+    buttons.appendChild(contactButton);
     
     navber.appendChild(buttons);
 };

@@ -8,7 +8,7 @@ function homePage(){
 
     const p2 = document.createElement('p');
     p2.innerHTML = "Lord of the Fried";
-    p2.classList.add('title');
+    p2.classList.add('restaurantName');
     content.appendChild(p2);
 
     const p3 = document.createElement('p');
