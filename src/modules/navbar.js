@@ -6,31 +6,25 @@ function createNavbar (){
     title.innerHTML="Lord of the Fried";
     navber.appendChild(title);
     
-    const buttons = document.createElement('div');
+    const buttons = document.createElement('ul');
     buttons.classList.add('buttons');
-    
-    const homeButton = document.createElement('div');
-    homeButton.classList.add('button');
-    homeButton.setAttribute("id","homeButton");
-    homeButton.innerHTML= "Home";
-    buttons.appendChild(homeButton);
-    
-    const menuButton = document.createElement('div');
-    menuButton.classList.add('button');
-    menuButton.setAttribute("id","menuButton");
-    menuButton.innerHTML= "Menu";
-    buttons.appendChild(menuButton);
-    
-    const contactButton = document.createElement('div');
-    contactButton.classList.add('button');
-    contactButton.setAttribute("id","contactButton");
-    contactButton.innerHTML= "Contact";
-    buttons.appendChild(contactButton);
+
+    createNavbarElement('homeButton','Home',buttons);
+    createNavbarElement('menuButton','Menu',buttons);
+    createNavbarElement('contactButton','contact',buttons);
     
     navber.appendChild(buttons);
 };
 
 export default createNavbar;
+
+function createNavbarElement(idName,content,buttons){
+    const button = document.createElement('li');
+    button.classList.add('button');
+    button.setAttribute("id",idName);
+    button.innerHTML= content;
+    buttons.appendChild(button);
+}
 
 
 
