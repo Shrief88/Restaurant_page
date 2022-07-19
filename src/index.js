@@ -21,7 +21,7 @@ function clearPageContent(){
 const displayController = (()=>{
     const homeButton = document.querySelector('#homeButton');
     const menuButton = document.querySelector('#menuButton');
-    const contactButton = document.querySelector('#contantButton');
+    const contactButton = document.querySelector('#contactButton');
 
     homeButton.addEventListener('click',()=>{
         clearPageContent();
@@ -33,7 +33,7 @@ const displayController = (()=>{
         menuPage();
     })
 
-    contactPage.addEventListener('click',()=>{
+    contactButton.addEventListener('click',()=>{
         clearPageContent();
         contactPage();
     })
