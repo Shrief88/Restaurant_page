@@ -10,7 +10,7 @@ init();
 
 function init(){
     createNavbar();
-    contactPage();
+    homePage();
 }
 
 function clearPageContent(){
