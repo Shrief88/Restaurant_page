@@ -22,6 +22,7 @@ const displayController = (()=>{
     const homeButton = document.querySelector('#homeButton');
     const menuButton = document.querySelector('#menuButton');
     const contactButton = document.querySelector('#contactButton');
+    const toggleButton = document.querySelector('.toggleButton');
 
     homeButton.addEventListener('click',()=>{
         clearPageContent();
@@ -36,6 +37,11 @@ const displayController = (()=>{
     contactButton.addEventListener('click',()=>{
         clearPageContent();
         contactPage();
+    })
+
+    toggleButton.addEventListener('click',()=>{
+        const navbarLinks = document.querySelector('.navbarLinks');
+        navbarLinks.classList.toggle('active');
     })
 
 
